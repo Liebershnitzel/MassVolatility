@@ -6,6 +6,11 @@ import re
 import json
 import shutil
 
+#===============================================================#
+#Created by Ben Lieberman
+#Revision 1.0
+#===============================================================#
+
 
 #CREATE THE OUTPUT DIRECTORY
 
@@ -16,7 +21,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 #DETERMINE THE OS OF EACH MEMORY DUMP AND MAP IT TO A SYMBOLS FILE#
 def get_os_profile(memory_dump):
-    print('DETERMINING THE SYMBOLS FILE FOR {memory_dump} THIS MAY TAKE AWHILE PLEASE BE PATIENT')
+    print("DETERMINING THE SYMBOLS FILE FOR {memory_dump} THIS MAY TAKE AWHILE PLEASE BE PATIENT")
     command = f"/root/volatility3/vol.py -f {memory_dump} windows.info"  # Or use linux.info for Linux dumps
     result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output = result.stdout.decode('utf-8')
