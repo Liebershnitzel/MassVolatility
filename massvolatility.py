@@ -14,10 +14,10 @@ import argparse
 
 #===============================================================#
 #Create the Arguments required
-directories = argparse.ArgumentParser(description="Please input the volatility3 directory and the directory to store outputs")
-directories.add_argument("-v", "--volatility-dir",help="specify the volatility3 directory",required=True)
-directories.add_argument("-o","--output-dir",help="specify the outputs directory",required=True)
-directories.add_argument("-m","--memory-dumps",help="specify the directory with the memorydumps",required=True)
+directories = argparse.ArgumentParser(description="Automatically parses with selected plugin/plugins on several memory dumps")
+directories.add_argument("-v", "--volatility-dir",help="volatility3 directory location",required=True)
+directories.add_argument("-o","--output-dir",help="output directory location",required=True)
+directories.add_argument("-m","--memory-dumps",help="memory dumps location",required=True)
 args = directories.parse_args()
 print(args.output_dir)
 print(args.volatility_dir)
