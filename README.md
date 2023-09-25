@@ -3,7 +3,8 @@ Automatically runs plugins against multiple memory dumps and saves the output to
 
 **To Use**
 - Download volatility3, ensure you have all symbol files located in the symbols directory
-![image](https://github.com/Liebershnitzel/MassVolatility/assets/49920398/65ae6321-ab17-47d9-9229-3cda0498639d)
+![MassVolatility](https://github.com/Liebershnitzel/MassVolatility/assets/49920398/fd059ea6-969e-4c39-85b3-db1f3d8f879b)
+
 **Information**
 
 - The script copies each symbol file into the /tmp directory, this is to allow for faster results as volatility3 spends a large amount of time determining the proper symbol file.
