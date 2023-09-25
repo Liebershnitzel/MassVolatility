@@ -3,6 +3,7 @@ Automatically runs plugins against multiple memory dumps and saves the output to
 
 **To Use**
 - Download volatility3, ensure you have all symbol files located in the symbols directory
+- The memory dumps will need to be located in the same directory
 ![MassVolatility](https://github.com/Liebershnitzel/MassVolatility/assets/49920398/2af07c05-520b-4bf8-a76f-47021ac6ae63)
 
 
