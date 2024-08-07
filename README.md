@@ -13,3 +13,7 @@ Automatically runs plugins against multiple memory dumps and saves the output to
 - The script will automatically determine the OS and symbol file and store this inside the determinedOS.json file located in the memorydumps folder.
 - All outputs will be stored in the Outputs directory, currently it has the output just stored as plain text files but I plan on updating this functionality.
 - The script currently only works on windows memory dumps.
+
+**Update**
+
+The script now extracts objects as json to allow for ingestion into SIEMS.
