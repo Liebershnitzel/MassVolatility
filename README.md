@@ -1,5 +1,5 @@
 # MassVolatility
-Automatically runs plugins against multiple memory dumps and saves the output to a text file, the script also saves the symbol file path for faster results. 
+Automatically runs plugins against multiple memory dumps and saves the output to a text or json file, the script also saves the symbol file path for faster results. 
 
 **To Use**
 - Download volatility3, ensure you have all symbol files located in the symbols directory.
@@ -14,6 +14,3 @@ Automatically runs plugins against multiple memory dumps and saves the output to
 - All outputs will be stored in the Outputs directory, currently it has the output just stored as plain text files but I plan on updating this functionality.
 - The script currently only works on windows memory dumps.
 
-**Update**
-
-The script now extracts objects as json to allow for ingestion into SIEMS.
